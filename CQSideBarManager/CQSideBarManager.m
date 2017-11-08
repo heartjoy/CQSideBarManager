@@ -52,9 +52,6 @@
     _currentWindow = SIDEBAR_KEY_WINDOW;
     _startOffsetPoint = SIDEBAR_START_POINT;
     _endOffsetPoint = CGPointMake(_currentWindow.cq_width, 0);
-
-    self.canCloseSideBar = YES;
-    
 }
 
 /*
@@ -76,6 +73,8 @@
         _shadeView.backgroundColor = SIDEBAR_COLOR(0, 0, 0, 0.5f);
     }
     [_currentWindow addSubview:_shadeView];
+
+    self.canCloseSideBar = YES;
 
     if (_delegate) {
         if ([_delegate respondsToSelector:@selector(viewForSideBar)]) {
