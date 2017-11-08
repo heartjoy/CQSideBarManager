@@ -45,3 +45,5 @@ Examples
 * If you have any questions during the process or want more interfaces to customize，you can ![issues me](https://github.com/heartjoy/CQSideBarManager/issues/new)!
 * If you find the function is not enough when used，Hope you can ![issues me](https://github.com/heartjoy/CQSideBarManager/issues/new)!，I very much to add more useful function to this framework ，Thank you !
 
+# Licenses
+All source code is licensed under the MIT License.
