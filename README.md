@@ -1,3 +1,4 @@
+
 # CQSideBarManager
 * a useful sideBar Manager for iOS.
 
@@ -11,9 +12,9 @@
 
 # Features
 
-* open the sideBar
-* close the sideBar
-* customize the sideBar
+* can open the sideBar
+* can close the sideBar
+* support customize the sideBar
 * support device rotation
 * support to click mask to close the sideBar 
 
@@ -41,5 +42,6 @@ Examples
 ```
 # Hope
 
-* If you have any questions during the process or want more interfaces to customize，you can issues me!
-* If you find the function is not enough when used，Hope you can Issues me，I very much to add more useful function to this framework ，Thank you !
+* If you have any questions during the process or want more interfaces to customize，you can ![issues me](https://github.com/heartjoy/CQSideBarManager/issues/new)!
+* If you find the function is not enough when used，Hope you can ![issues me](https://github.com/heartjoy/CQSideBarManager/issues/new)!，I very much to add more useful function to this framework ，Thank you !
+
