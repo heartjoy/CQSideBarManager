@@ -16,7 +16,7 @@
 /**
  * 侧边栏里面的具体View
  */
-- (UIView *)viewForSideBarView;
+- (UIView *)viewForSideBar;
 
 @optional
 
@@ -40,16 +40,16 @@
 /**
  * 获取侧边栏的具体view
  */
-- (UIView *)viewInSideBarView;
+- (UIView *)viewInSideSideBar;
 
 /**
  * 打开侧边栏
  */
-- (void)openSideBarView:(id<CQSideBarManagerDelegate>)delegate;
+- (void)openSideBar:(id<CQSideBarManagerDelegate>)delegate;
 
 /**
  * 关闭侧边栏
  */
-- (void)closeSideBarView;
+- (void)closeSideBar;
 
 @end

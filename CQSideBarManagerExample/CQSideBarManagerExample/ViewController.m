@@ -31,11 +31,11 @@
 
 #pragma mark - actions
 - (IBAction)showAction:(id)sender {
-    [[CQSideBarManager sharedInstance] openSideBarView:self];
+    [[CQSideBarManager sharedInstance] openSideBar:self];
 }
 
 #pragma mark - CQSideBarManagerDelegate
-- (UIView *)viewForSideBarView
+- (UIView *)viewForSideBar
 {
     SideBarViewController *sideBarVC = [[SideBarViewController alloc] init];
     sideBarVC.view.cq_width = self.view.cq_width - 35.f;

@@ -66,7 +66,7 @@
     _contentView.frame = CGRectMake(_startOffsetPoint.x, _startOffsetPoint.y, _currentWindow.cq_width - _startOffsetPoint.x, _currentWindow.cq_height - _startOffsetPoint.y);
 }
 
-- (void)openSideBarView:(id<CQSideBarManagerDelegate>)delegate
+- (void)openSideBar:(id<CQSideBarManagerDelegate>)delegate
 {
     _delegate = delegate;
     _contentView = nil;
@@ -78,8 +78,8 @@
     [_currentWindow addSubview:_shadeView];
 
     if (_delegate) {
-        if ([_delegate respondsToSelector:@selector(viewForSideBarView)]) {
-            _contentView = [self.delegate viewForSideBarView];
+        if ([_delegate respondsToSelector:@selector(viewForSideBar)]) {
+            _contentView = [self.delegate viewForSideBar];
             /*
              * 重置设置抽屉视图的初始位置
              */
@@ -99,7 +99,7 @@
     
 }
 
-- (void)closeSideBarView
+- (void)closeSideBar
 {
     if (_contentView) {
         [self closeAnimation];
@@ -144,7 +144,7 @@
 }
 
 #pragma mark -----Getter
-- (UIView *)viewInSideBarView
+- (UIView *)viewInSideSideBar
 {
     return _contentView;
 }
@@ -152,7 +152,7 @@
 - (UITapGestureRecognizer *)tapGestureRecognizer
 {
     if (!_tapGestureRecognizer) {
-        _tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeSideBarView)];
+        _tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeSideBar)];
     }
     
     return _tapGestureRecognizer;
