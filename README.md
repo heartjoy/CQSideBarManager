@@ -17,6 +17,7 @@
 * support customize the sideBar
 * support device rotation
 * support to click mask to close the sideBar 
+* support CocoaPods
 
 # Delegate
 ```
@@ -30,8 +31,10 @@
 - (BOOL)canCloseSideBar;
 
 ```
-# Usage
-Examples
+# CocoaPods
+* pod "CQSideBarManager"
+
+# Examples
 
 ```
 //open the sideBar
