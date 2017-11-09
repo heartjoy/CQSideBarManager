@@ -38,10 +38,10 @@
 
 ```
 //open the sideBar
-[[CQSideBarManager sharedInstance] openSideBarView:self];
+[[CQSideBarManager sharedInstance] openSideBar:self];
 
 //close the sideBar
-[[CQSideBarManager sharedInstance] closeSideBarView];
+[[CQSideBarManager sharedInstance] closeSideBar];
 ```
 ## Hope
 
