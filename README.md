@@ -26,7 +26,7 @@
 
 @optional
 /**
- * need click mask to close the sideBar,default is YES
+ * 点击遮罩层关闭侧边栏,默认为YES
  */
 - (BOOL)canCloseSideBar;
 
@@ -37,10 +37,10 @@
 ## Examples
 
 ```
-//open the sideBar
+//打开侧边栏
 [[CQSideBarManager sharedInstance] openSideBar:self];
 
-//close the sideBar
+//关闭侧边栏
 [[CQSideBarManager sharedInstance] closeSideBar];
 ```
 ## Hope
